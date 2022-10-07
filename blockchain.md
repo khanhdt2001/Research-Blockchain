@@ -34,12 +34,14 @@ Kiểu dữ liệu bytes max là bytes32.
     data location chỉ dùng cho array, struct, mapping; string = array of byte.
 
 Có thể deploy contract từ 1 contract khác khi sử dụng từ khóa new
-image.png
+![image](https://user-images.githubusercontent.com/62747541/194509391-f6b3a4ed-f70e-4ee6-82df-956ccf987258.png)
+
 
 - inheritance and overrides
 
     overide: khi muốn override funtion A thì A cần là virtual 
     ex:
+    ```
     contract A1 {
         function A () public virtual {
             .....
@@ -50,3 +52,5 @@ image.png
             ....
         }
     }
+    ```
+- Khi thực hiện việc chuyển Eth bằng smart contract thì cần đến từ khóa payable vào function thự hiện việc đó
